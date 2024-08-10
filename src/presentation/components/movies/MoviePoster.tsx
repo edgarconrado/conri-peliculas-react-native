@@ -1,4 +1,4 @@
-import { Image, StyleSheet, View } from "react-native"
+import { Image, ImageBackground, StyleSheet, View } from "react-native"
 import { Movie } from "../../../core/entities/movie.entity"
 
 interface Props {
@@ -8,9 +8,7 @@ interface Props {
 export const MoviePoster = ({ movie }: Props ) => {
   return (
     <View style={{ ...styles.imageContainer, width: 300, height: 400 } }>
-        <Image 
-            source={{ uri: movie.poster }}
-        />
+        <Image style={ styles.image} source={{uri: movie.poster}} />
     </View>
   )
 }

@@ -21,7 +21,8 @@ export const PosterCarousel = ({ height, movies }: Props) => {
                             key={movie.id}
                             movie={movie} 
                         />
-                    ))}
+                    ))
+                }
             </ScrollView>
         </View>
     )
